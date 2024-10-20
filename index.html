@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cre8Chain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.7.0"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#"><img src="logo.jpg" alt="ソリューションサービス" style="height: 40px;"></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">サービス概要</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">料金プラン</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">コンタクト</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero" style="padding: 50px 0; text-align: center;">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="sekisai.webp" alt="積載イメージ" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="SC.webp" alt="SCイメージ" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mb-4" data-aos="fade-up">
+                <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                    <h1>物流現場の「ムリ・ムダ・ムラ」をなくし、働く人を笑顔に。</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="DX.webp" alt="DXイメージ" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="souko.webp" alt="倉庫イメージ" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12" style="background-color: #28a745; color: white; padding: 10px 0;">
+                    <h2>我々について</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-8 offset-md-2">
+                    <p>
+                        いま、物流現場は人手不足に悩まされ、長時間労働や過酷な作業が常態化しています。<br>
+                        私たちは、そんな現状を変えたい。<br><br>
+                        「物を運ぶ」をキーワードに、テクノロジーの力で物流現場のムリ・ムダ・ムラをなくし、<br>
+                        働く人がより笑顔で、より働きやすい環境を創造します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス説明セクション -->
+    <section id="services" class="container my-5">
+        <h2 class="text-center mb-4">サービス概要</h2>
+        <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="col-md-6">
+                <img src="Startup.webp" class="img-fluid" alt="スタートアップ精神" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6">
+                <h5 class="card-title">
+                    <span class="display-4 text-muted">01</span> <br>スタートアップ精神
+                </h5>
+                <p class="card-text fs-5">私たちは迫速に変化し、新しい挑戦に果敢に立ち向かいます。現場に寄り添い、柔軟なソリューションを提供します。</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-5" data-aos="fade-left" data-aos-delay="200">
+            <div class="col-md-6 order-md-2">
+                <img src="kouritsu.webp" class="img-fluid" alt="積載効率の追求" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h5 class="card-title">
+                    <span class="display-4 text-muted">02</span> <br>積載効率の追求
+                </h5>
+                <p class="card-text fs-5">積載重量から最適な効率を導き出し、運航の効率化をサポートします。</p>
+            </div>
+        </div>
+        <div class="row align-items-center" data-aos="fade-right" data-aos-delay="200">
+            <div class="col-md-6">
+                <img src="support.webp" class="img-fluid" alt="現場に寄り添うサポート" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6">
+                <h5 class="card-title">
+                    <span class="display-4 text-muted">03</span> <br>現場に寄り添うサポート
+                </h5>
+                <p class="card-text fs-5">お客様の現場に深く入り込み、実情に即した提案とサポートを行います。</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 料金プランセクション -->
+    <section id="pricing" class="container my-5">
+        <h2 class="text-center mb-4">料金プラン</h2>
+        <div class="row pricing-table text-center">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">ベーシック</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">￥1,000 <small class="text-muted">/ 月</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 ユーザー含む</li>
+                            <li>2 GB ストレージ</li>
+                            <li>メールサポート</li>
+                            <li>ヘルプセンターアクセス</li>
+                        </ul>
+                        <a href="#" class="btn btn-lg btn-block btn-primary">今すぐ登録</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">スタンダード</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">￥5,000 <small class="text-muted">/ 月</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 ユーザー含む</li>
+                            <li>10 GB ストレージ</li>
+                            <li>優先メールサポート</li>
+                            <li>ヘルプセンターアクセス</li>
+                        </ul>
+                        <a href="#" class="btn btn-lg btn-block btn-primary">今すぐ登録</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">プレミアム</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">￥10,000 <small class="text-muted">/ 月</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 ユーザー含む</li>
+                            <li>15 GB ストレージ</li>
+                            <li>電話 & メールサポート</li>
+                            <li>ヘルプセンターアクセス</li>
+                        </ul>
+                        <a href="#" class="btn btn-lg btn-block btn-primary">今すぐ登録</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQセクション -->
+    <section id="faq" class="container my-5">
+        <h2 class="text-center mb-4">よくあるご質問</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Q1: サービスの導入にはどれくらいの時間がかかりますか？
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        一般的には、導入までに1週間程度のお時間を頂いておりますが、導入規模により異なります。詳しくはお問い合わせください。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Q2: サポートはどのように提供されていますか？
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        メールサポートを基本としておりますが、プレミアムプランのお客様には電話サポートもご提供しています。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Q3: カスタマイズは可能ですか？
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        はい、可能です。お客様のご要望に応じて、柔軟に対応いたします。詳細はサポートチームにご相談ください。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">お問い合わせ</h2>
+        <form hx-post="/contact" hx-trigger="submit" hx-target="this" hx-swap="outerHTML">
+            <div class="mb-3">
+                <label for="name" class="form-label">お名前</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="お名前を入力してください">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">メールアドレス</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力してください">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">メッセージ</label>
+                <textarea class="form-control" id="message" name="message" rows="3" placeholder="ご質問やご要望をお聞かせください"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">送信</button>
+        </form>
+    </section>
+
+    <!-- フッター -->
+    <footer style="background-color: #f8f9fa; padding: 20px 0; text-align: center;">
+        <p>&copy; 2024 ソリューションサービス. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
